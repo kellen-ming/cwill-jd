@@ -40,27 +40,38 @@ hr{border:none;border-top:1px solid var(--border);margin:1.75rem 0}
 .card-footer{padding:1.5rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .foot-note{font-size:12px;color:var(--text3)}
 .btn-primary{background:var(--blue);color:#fff;border:none;padding:11px 28px;border-radius:var(--r2);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}.btn-primary:hover{opacity:.88}
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:200;align-items:center;justify-content:center;padding:1rem}
-.modal-overlay.show{display:flex}
-.modal{background:var(--white);border:1px solid var(--border);border-radius:var(--r3);padding:2rem;max-width:460px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.15)}
-.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.5rem;gap:1rem}
-.modal-title{font-size:18px;font-weight:700;color:var(--text)}.modal-job{font-size:13px;color:var(--text3);margin-top:3px}
-.modal-close{background:var(--bg);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.mf{margin-bottom:13px}.ml{font-size:13px;font-weight:500;color:var(--text2);margin-bottom:5px;display:block}
-.mi{width:100%;background:var(--white);border:1px solid var(--border);color:var(--text);border-radius:var(--r);padding:10px 13px;font-size:14px;font-family:inherit;outline:none;transition:border-color .15s}
-.mi:focus{border-color:var(--blue)}.mi::placeholder{color:var(--text3)}
-textarea.mi{resize:vertical;min-height:80px}
-.mhint{font-size:12px;color:var(--text3);margin-top:4px}
-.msub{width:100%;background:var(--blue);color:#fff;border:none;padding:12px;border-radius:var(--r);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:.5rem;transition:opacity .15s}.msub:hover{opacity:.88}
-.mnote{font-size:12px;color:var(--text3);text-align:center;margin-top:10px}
 footer{text-align:center;padding:1.5rem;font-size:12px;color:var(--text3)}
 footer a{color:var(--text2);text-decoration:none}
+footer p{margin-bottom:6px}footer p:last-child{margin-bottom:0}footer strong{color:var(--text2);font-weight:600}
+.nav-brand-wrap{display:flex;flex-direction:column;line-height:1.15}
+.nav-brand-sub{font-size:11px;color:var(--text3);font-weight:400;margin-top:1px;letter-spacing:.02em}
+.nav-tag{display:inline-block;background:#fff7ed;border:1px solid #fed7aa;color:#c2410c;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;margin-left:6px;vertical-align:1px;letter-spacing:.02em}
+.referral-banner{background:#fff7ed;border-bottom:1px solid #fed7aa}
+.referral-inner{max-width:860px;margin:0 auto;padding:12px 2rem;display:flex;gap:12px;align-items:flex-start}
+.referral-icon{font-size:18px;flex-shrink:0;line-height:1.4}
+.referral-title{font-size:13px;font-weight:600;color:#9a3412;margin-bottom:2px}
+.referral-desc{font-size:12.5px;color:#9a3412;line-height:1.65;opacity:.92}
+.foot-back{font-size:13px;color:var(--text2);text-decoration:none;font-weight:500;transition:color .15s}
+.foot-back:hover{color:var(--text)}
 @media(max-width:640px){.two-col{grid-template-columns:1fr}.co-strip{grid-template-columns:repeat(2,1fr)}.co-item:nth-child(2){border-right:none}.co-item:nth-child(1),.co-item:nth-child(2){border-bottom:1px solid var(--border)}.card-header,.card-body,.card-footer{padding:1.5rem}.co-strip{padding:1.25rem}}
 </style></head><body>
 <nav><div class="nav-inner">
-  <a href="#" class="nav-logo"><div class="nav-mark">CW</div><span class="nav-brand">CWILL 畅销家</span></a>
-  <a href="https://www.cwill.com" class="nav-link" target="_blank">了解公司 →</a>
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-mark">CW</div>
+    <div class="nav-brand-wrap">
+      <span class="nav-brand">CWILL 畅销家 <span class="nav-tag">个人内推</span></span>
+      <span class="nav-brand-sub">非官方 · 由在职员工整理</span>
+    </div>
+  </a>
+  <a href="../index.html" class="nav-link">← 回到内推页</a>
 </div></nav>
+<div class="referral-banner"><div class="referral-inner">
+  <div class="referral-icon">👋</div>
+  <div>
+    <div class="referral-title">这是一份个人内推页，并非 CWILL 官方招聘页</div>
+    <div class="referral-desc">本页 JD 整理自公司公开招聘信息，由我作为在职员工帮你内推到对应部门负责人，最终录用以公司正式面试评估为准。</div>
+  </div>
+</div></div>
 <div class="page"><div class="card">
   <div class="card-header">
     <div class="eyebrow">Open Role · 技术研发</div>
@@ -70,7 +81,7 @@ footer a{color:var(--text2);text-decoration:none}
       <span class="badge b-gray">AWS / GCP</span>
       <span class="badge b-gray">Kubernetes</span>
       <span class="badge b-gray">深圳</span>
-      <span class="badge b-gray">5年以上经验</span>
+      <span class="badge b-gray">6年以上经验</span>
     </div>
   </div>
   <div class="co-strip">
@@ -96,7 +107,7 @@ footer a{color:var(--text2);text-decoration:none}
       <div>
         <h2>任职要求</h2>
         <ul class="list">
-          <li>大专及以上学历，计算机或相关专业，5 年以上互联网 / SaaS 公司运维经验</li>
+          <li>大专及以上学历，计算机或相关专业，6 年以上互联网 / SaaS 公司运维经验</li>
           <li>熟悉 AWS 或 GCP 常用服务（EC2、S3、R2、RDS、VPC 等），掌握 Docker 与 Kubernetes 集群日常管理</li>
           <li>熟悉 Prometheus、Grafana、ELK、Zabbix 的部署和维护</li>
           <li>具备 MySQL / Redis 等数据库日常运维与优化经验，熟练掌握 Linux 系统管理与故障排查</li>
@@ -116,37 +127,12 @@ footer a{color:var(--text2);text-decoration:none}
   </div>
   <div class="card-footer">
     <span class="foot-note">CWILL 畅销家 · 深圳 · 国家级高新科技企业</span>
-    <button class="btn-primary" onclick="openModal()">立即投递 →</button>
+    <a class="foot-back" href="../index.html">← 回到所有岗位</a>
   </div>
 </div></div>
 
-<div class="modal-overlay" id="modal">
-  <div class="modal">
-    <div class="modal-head">
-      <div><div class="modal-title">投递简历</div><div class="modal-job">应聘职位：高级运维工程师（海外云）</div></div>
-      <button class="modal-close" onclick="closeModal()">✕</button>
-    </div>
-    <div class="mf"><label class="ml">姓名 *</label><input id="f-name" type="text" class="mi" placeholder="请输入您的姓名"/></div>
-    <div class="mf"><label class="ml">联系电话 *</label><input id="f-phone" type="tel" class="mi" placeholder="请输入手机号码"/></div>
-    <div class="mf"><label class="ml">电子邮箱 *</label><input id="f-email" type="email" class="mi" placeholder="请输入常用邮箱"/></div>
-    <div class="mf"><label class="ml">简历链接（选填）</label><input id="f-resume" type="text" class="mi" placeholder="Boss直聘 / 领英 / 个人网站等在线简历链接"/></div>
-    <div class="mf"><label class="ml">自我介绍 *</label><textarea id="f-intro" class="mi" placeholder="请简单介绍您的背景，以及为什么对该岗位感兴趣（100字以上更佳）"></textarea><div class="mhint">充分的自我介绍有助于我们更快评估并与您联系</div></div>
-    <button class="msub" onclick="submitForm()">提交申请</button>
-    <div class="mnote">提交后我们将尽快通过邮件与您联系</div>
-  </div>
-</div>
-<script>
-function openModal(){document.getElementById('modal').classList.add('show');document.body.style.overflow='hidden'}
-function closeModal(){document.getElementById('modal').classList.remove('show');document.body.style.overflow=''}
-document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal()});
-function submitForm(){
-  var n=document.getElementById('f-name').value.trim(),p=document.getElementById('f-phone').value.trim(),e=document.getElementById('f-email').value.trim(),i=document.getElementById('f-intro').value.trim();
-  if(!n||!p||!e||!i){alert('请填写姓名、联系电话、邮箱和自我介绍');return}
-  var r=document.getElementById('f-resume').value.trim();
-  var body='应聘职位：高级运维工程师（海外云）\n\n姓名：'+n+'\n联系电话：'+p+'\n邮箱：'+e+(r?'\n简历链接：'+r:'')+'\n\n自我介绍：\n'+i;
-  window.location.href='mailto:liangzhimingzm@gmail.com?subject='+encodeURIComponent('【求职应聘】高级运维工程师（海外云）— '+n)+'&body='+encodeURIComponent(body);
-  setTimeout(closeModal,300);
-}
-</script>
-<footer><p>© 2025 CWILL 畅销家 · <a href="https://www.cwill.com" target="_blank">www.cwill.com</a></p></footer>
+<footer>
+  <p><strong>免责声明</strong>：本页为个人内推页，与 CWILL 畅销家无任何官方合作或委托关系。岗位信息整理自公司公开招聘资料，不构成任何录用承诺。</p>
+  <p>© 2026 个人内推页 · 非 CWILL 官方页面 &nbsp;|&nbsp; 公司官网：<a href="https://www.cwill.com" target="_blank">www.cwill.com</a></p>
+</footer>
 </body></html>
