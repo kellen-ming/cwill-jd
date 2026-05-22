@@ -151,6 +151,10 @@ hr{border:none;border-top:1px solid var(--border)}
 .apply-btn{background:var(--blue);color:#fff;border:none;padding:10px 22px;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}
 .apply-btn:hover{opacity:.88}
 
+/* === 临时禁用投递弹窗：与 JS 中 MODAL_DISABLED 配合。恢复时删除本块。 === */
+.jd-foot{display:none}
+[onclick*="openModal"]{display:none}
+
 /* CTA */
 .cta-bg{background:var(--bg);border-top:1px solid var(--border)}
 .cta-inner{max-width:520px;margin:0 auto;text-align:center}
