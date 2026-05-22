@@ -178,7 +178,7 @@ Wk0xMTU0OTM5NDEw
 2. 简历附件，或在线简历链接（Boss 直聘 / 领英 / 个人网站均可）
 3. 简短自我介绍（可选）
 
-📄 完整 JD 与公司介绍（带可点击的目录、动效）：〔此处填入你部署的招聘页 URL，例如 GitHub Pages / Vercel 上的 `cwill_recruitment.html` 链接〕
+📄 完整 JD 与公司介绍：https://cwill-jd.vercel.app/#
 
 ---
 
