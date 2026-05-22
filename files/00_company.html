@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CWILL 畅销家 — 公司介绍</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--white:#fff;--bg:#f7f8fa;--text:#111827;--text2:#6b7280;--text3:#9ca3af;--border:#e5e7eb;--border2:#d1d5db;--blue:#2563eb;--blue-light:#eff6ff;--blue-mid:#bfdbfe;--blue-text:#1d4ed8;--green:#059669;--green-light:#ecfdf5;--r:8px;--r2:12px;--r3:16px;--shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);--shadow2:0 4px 20px rgba(0,0,0,.08)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+nav{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:62px;position:sticky;top:0;z-index:100}
+.nav-inner{max-width:900px;margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-mark{width:32px;height:32px;background:var(--text);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff}
+.nav-brand{font-size:15px;font-weight:600;color:var(--text)}
+.nav-link{font-size:13px;color:var(--text2);text-decoration:none;transition:color .15s}
+.nav-link:hover{color:var(--text)}
+.page{max-width:900px;margin:0 auto;padding:3rem 2rem 5rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--r3);box-shadow:var(--shadow2);overflow:hidden}
+.card-top{padding:2.5rem 2.5rem 2rem;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+h1{font-size:clamp(26px,4vw,38px);font-weight:700;color:var(--text);line-height:1.2;letter-spacing:-.5px;margin-bottom:.75rem}
+.sub{font-size:16px;color:var(--text2);line-height:1.75;max-width:620px}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;margin-top:2rem}
+.stat{padding:1.1rem .75rem;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-num{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.5px;line-height:1}
+.stat-lbl{font-size:11px;color:var(--text3);margin-top:3px}
+.card-body{padding:2.5rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.copy p{font-size:14.5px;color:var(--text2);line-height:1.9;margin-bottom:.9rem}
+.copy p:last-child{margin-bottom:0}
+.label-sm{font-size:11px;color:var(--text3);margin:1.25rem 0 .5rem;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--bg);border:1px solid var(--border);color:var(--text2);padding:4px 11px;border-radius:20px;font-size:12px}
+.feat-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.feat{padding:1rem 1.2rem;display:flex;gap:12px;align-items:flex-start;background:var(--white);border-bottom:1px solid var(--border)}
+.feat:last-child{border-bottom:none}
+.feat-icon{width:34px;height:34px;border-radius:var(--r);background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.feat-title{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:2px}
+.feat-desc{font-size:13px;color:var(--text2);line-height:1.6}
+hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+h2{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.3px;margin-bottom:.5rem}
+.sec-desc{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:1.5rem}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.why-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem}
+.why-num{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:10px}
+.why-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.why-desc{font-size:13px;color:var(--text2);line-height:1.7}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.benefit{background:var(--bg);border:1px solid var(--border);border-radius:var(--r2);padding:1.25rem}
+.b-icon{font-size:20px;margin-bottom:.6rem}
+.b-title{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:.3rem}
+.b-desc{font-size:12.5px;color:var(--text2);line-height:1.6}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.team-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem}
+.team-lbl{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:.6rem}
+.team-title{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.team-desc{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:.6rem}
+.origin-chips{display:flex;flex-wrap:wrap;gap:5px}
+.oc{background:var(--blue-light);border:1px solid var(--blue-mid);color:var(--blue-text);padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500}
+.cta-strip{background:var(--blue-light);border-top:1px solid var(--blue-mid);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.cta-text .cta-title{font-size:17px;font-weight:700;color:var(--text)}
+.cta-text .cta-sub{font-size:13px;color:var(--text2);margin-top:3px}
+.btn-primary{background:var(--blue);color:#fff;border:none;padding:11px 26px;border-radius:var(--r2);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}
+.btn-primary:hover{opacity:.88}
+footer{text-align:center;padding:1.5rem;font-size:12px;color:var(--text3)}
+footer a{color:var(--text2);text-decoration:none}
+@media(max-width:640px){.grid-2,.why-grid,.benefits-grid,.team-grid{grid-template-columns:1fr}.stat-row{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--border)}.card-top,.card-body,.cta-strip{padding:1.5rem}}
+</style></head><body>
+<nav><div class="nav-inner">
+  <a href="#" class="nav-logo"><div class="nav-mark">CW</div><span class="nav-brand">CWILL 畅销家</span></a>
+  <a href="https://www.cwill.com" class="nav-link" target="_blank">官网 →</a>
+</div></nav>
+
+<div class="page">
+<div class="card">
+
+  <div class="card-top">
+    <div class="eyebrow">About CWILL · 公司介绍</div>
+    <h1>专注全球电商生态的<br/>B2B SaaS 平台</h1>
+    <p class="sub">CWILL 畅销家，成立于 2014 年，深圳，国家级高新科技企业。年复合增长率超 100%，持续盈利，服务全球超 30 万家跨境电商卖家。</p>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num">30万+</div><div class="stat-lbl">全球卖家客户</div></div>
+      <div class="stat"><div class="stat-num">100%+</div><div class="stat-lbl">年复合增长率</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">SaaS 产品线</div></div>
+      <div class="stat"><div class="stat-num">200+</div><div class="stat-lbl">全球团队成员</div></div>
+    </div>
+  </div>
+
+  <div class="card-body">
+
+    <!-- ABOUT -->
+    <div class="grid-2">
+      <div class="copy">
+        <p>CWILL（畅销家）于 2014 年在深圳成立，是一家深耕国际电商生态的 B2B SaaS 平台公司，专注于帮助全球跨境电商卖家提升销量、优化运营效率、拓展品牌影响力。</p>
+        <p>我们推出了超过 10 款 SaaS 产品，覆盖供应链优化、多语言店铺建设、营销策略、转化率提升、物流追踪和售后管理等全链路场景，旗下产品包括 ParcelWILL、TrustWILL、ChatWILL、SendWILL、SEOWILL 等。</p>
+        <p>公司自成立起保持盈利，年复合增长率持续超过 100%，是行业内极少数兼具高速增长与健康营收的互联网科技企业，在 Shopify App Store 保持 4.9 星高评分，荣获 G2 多项年度大奖。</p>
+        <div class="label-sm">服务的知名客户与合作平台</div>
+        <div class="chips"><span class="chip">Shopify</span><span class="chip">WooCommerce</span><span class="chip">Amazon</span><span class="chip">eBay</span><span class="chip">SHEIN</span><span class="chip">DJI</span><span class="chip">Banggood</span><span class="chip">LUX SKIN</span><span class="chip">BITTERLIEBE</span></div>
+      </div>
+      <div class="feat-list">
+        <div class="feat"><div class="feat-icon">🌐</div><div><div class="feat-title">全球化产品矩阵</div><div class="feat-desc">10+ SaaS 产品覆盖跨境电商全链路，从流量获取到售后服务，助力卖家在全球市场规模化增长。</div></div></div>
+        <div class="feat"><div class="feat-icon">📈</div><div><div class="feat-title">持续盈利，高速增长</div><div class="feat-desc">年复合增长率超 100%，始终保持盈利，是极少数兼具高速增长与健康营收的互联网科技企业。</div></div></div>
+        <div class="feat"><div class="feat-icon">⭐</div><div><div class="feat-title">行业认可，客户信赖</div><div class="feat-desc">Shopify App Store 15,000+ 条评价，4.9 星均分，G2 多项年度大奖，Built for Shopify 认证。</div></div></div>
+        <div class="feat"><div class="feat-icon">🌍</div><div><div class="feat-title">国际化多元团队</div><div class="feat-desc">200+ 成员遍布全球，15% 有留学背景，20% 硕士以上，核心成员来自 PayPal、华为、Airbnb。</div></div></div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- WHY JOIN -->
+    <h2>为什么选择加入我们</h2>
+    <p class="sec-desc">不只是一份工作，而是一个让你真正发挥价值、快速成长、与优秀的人并肩作战的舞台。</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-num">01 · Opportunity</div><div class="why-title">朝阳行业，稳健增长</div><div class="why-desc">跨境电商市场持续扩张，30 万+全球卖家，年复合增长率超 100% 且始终盈利。你加入的是有真实用户、真实收入的高速公司。</div></div>
+      <div class="why-card"><div class="why-num">02 · Compensation</div><div class="why-title">丰厚薪酬与合伙人通道</div><div class="why-desc">月薪 + 项目奖金 + 年终奖 + 年底分红，预留大量合伙人通道，成为合伙人后享有股权激励，付出与回报完全正相关。</div></div>
+      <div class="why-card"><div class="why-num">03 · Growth</div><div class="why-title">真正的高速成长环境</div><div class="why-desc">业务高速增长，每个人都有机会承担更大责任。培训报销、书籍采购、技术分享会，公司为你的成长持续真实投入。</div></div>
+      <div class="why-card"><div class="why-num">04 · Culture</div><div class="why-title">扁平开放的团队文化</div><div class="why-desc">公司没有"总"，只有哥和老师。90 后为主，年轻有活力，崇尚创新，扁平化管理，好想法被快速落地。</div></div>
+      <div class="why-card"><div class="why-num">05 · Care</div><div class="why-title">真心的员工关怀</div><div class="why-desc">七险一金+重疾险+责任险，"畅基金"应急援助，女生专属假期，程序员节彩蛋，年度体检，每项都是真心在意。</div></div>
+      <div class="why-card"><div class="why-num">06 · Team</div><div class="why-title">高素质国际化团队</div><div class="why-desc">15% 有海外留学经历，20% 硕士以上，核心成员来自 PayPal、华为、Airbnb 及哥伦比亚大学、墨尔本大学等名校。</div></div>
+    </div>
+
+    <hr/>
+
+    <!-- BENEFITS -->
+    <h2>员工福利</h2>
+    <p class="sec-desc">丰富的福利体系，希望你在这里过得好、长得快、待得久。</p>
+    <div class="benefits-grid">
+      <div class="benefit"><div class="b-icon">🛡️</div><div class="b-title">七险一金 + 商业险</div><div class="b-desc">额外购买重疾险与责任险，保障更全面，让你和家人更安心。</div></div>
+      <div class="benefit"><div class="b-icon">💰</div><div class="b-title">多元薪酬激励</div><div class="b-desc">月薪+项目奖金+年终奖+年底分红，预留大量合伙人通道与股权激励。</div></div>
+      <div class="benefit"><div class="b-icon">📚</div><div class="b-title">学习成长支持</div><div class="b-desc">购书全额报销，外部培训报销，定期技术分享与读书会。</div></div>
+      <div class="benefit"><div class="b-icon">🏀</div><div class="b-title">每周运动活动</div><div class="b-desc">周二篮球、周四羽毛球、公司跑团，健康生活与团队凝聚力并重。</div></div>
+      <div class="benefit"><div class="b-icon">🍱</div><div class="b-title">餐饮 & 下午茶</div><div class="b-desc">每月部门聚餐经费，定期下午茶与水果零食，活动内容民主投票。</div></div>
+      <div class="benefit"><div class="b-icon">🌟</div><div class="b-title">特色假期与关怀</div><div class="b-desc">带薪年假，女生专属半天假，年度体检，"畅基金"应急援助。</div></div>
+    </div>
+    <div class="label-sm" style="margin-top:1.5rem">更多节日福利</div>
+    <div class="chips"><span class="chip">妇女节礼品</span><span class="chip">程序员节彩蛋</span><span class="chip">端午/中秋福利</span><span class="chip">圣诞节活动</span><span class="chip">六一儿童节</span><span class="chip">年度体检</span><span class="chip">不定期团建</span><span class="chip">畅基金援助</span></div>
+
+    <hr/>
+
+    <!-- TEAM -->
+    <h2>团队构成</h2>
+    <p class="sec-desc">与聪明的人一起做有意思的事，是最快的成长方式。</p>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-lbl">🎓 学历背景</div><div class="team-title">高学历，爱学习</div><div class="team-desc">20% 成员硕士及以上，15% 有海外留学背景，内部技术分享与读书会定期举办。</div><div class="origin-chips"><span class="oc">北京大学</span><span class="oc">中南大学</span><span class="oc">哥伦比亚大学</span><span class="oc">墨尔本大学</span></div></div>
+      <div class="team-card"><div class="team-lbl">🏢 从业背景</div><div class="team-title">顶尖企业出身</div><div class="team-desc">核心成员来自全球顶尖科技与互联网公司，带来成熟的行业经验与全球化视野。</div><div class="origin-chips"><span class="oc">PayPal</span><span class="oc">华为</span><span class="oc">VIVO</span><span class="oc">Airbnb</span></div></div>
+      <div class="team-card"><div class="team-lbl">🌍 团队分布</div><div class="team-title">真正的国际化团队</div><div class="team-desc">200+ 成员分布在全球各地，具备真正的跨文化协作能力，在跨境电商这个天然国际化的赛道上如鱼得水。</div></div>
+      <div class="team-card"><div class="team-lbl">🔥 团队文化</div><div class="team-title">年轻活力，扁平高效</div><div class="team-desc">90 后为主体，没有官僚气息，有的是直接沟通与快速行动。扁平化管理让好想法被快速验证。</div></div>
+    </div>
+
+  </div>
+
+  <div class="cta-strip">
+    <div class="cta-text"><div class="cta-title">我们正在招募新成员</div><div class="cta-sub">产品经理、工程师、SEO运营，欢迎加入</div></div>
+    <a href="https://www.cwill.com/careers" target="_blank"><button class="btn-primary">查看开放职位 →</button></a>
+  </div>
+
+</div>
+</div>
+<footer><p>© 2025 CWILL 畅销家 · 深圳 · <a href="https://www.cwill.com" target="_blank">www.cwill.com</a></p></footer>
+</body></html>

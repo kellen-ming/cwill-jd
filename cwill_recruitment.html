@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Careers at CWILL — 加入畅销家</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#ffffff;
+  --bg:#f7f8fa;
+  --bg2:#f0f2f5;
+  --text:#111827;
+  --text2:#6b7280;
+  --text3:#9ca3af;
+  --border:#e5e7eb;
+  --border2:#d1d5db;
+  --blue:#2563eb;
+  --blue-light:#eff6ff;
+  --blue-mid:#bfdbfe;
+  --blue-text:#1d4ed8;
+  --green:#059669;
+  --green-light:#ecfdf5;
+  --r:8px;
+  --r2:12px;
+  --r3:16px;
+  --shadow:0 1px 3px rgba(0,0,0,0.08),0 1px 2px rgba(0,0,0,0.04);
+  --shadow2:0 4px 16px rgba(0,0,0,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--white);color:var(--text);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  height:62px;
+}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{width:32px;height:32px;background:var(--text);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;letter-spacing:-.3px}
+.nav-brand{font-size:15px;font-weight:600;color:var(--text)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:14px;color:var(--text2);text-decoration:none;transition:color .15s}
+.nav-links a:hover{color:var(--text)}
+.nav-btn{background:var(--blue);color:#fff;border:none;padding:8px 18px;border-radius:var(--r);font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;text-decoration:none;transition:opacity .15s;display:inline-block}
+.nav-btn:hover{opacity:.88}
+
+/* HERO */
+.hero{padding:6rem 2rem 5rem;border-bottom:1px solid var(--border)}
+.hero-inner{max-width:680px;margin:0 auto;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:var(--blue-light);border:1px solid var(--blue-mid);color:var(--blue-text);padding:5px 14px;border-radius:20px;font-size:12px;font-weight:500;margin-bottom:1.75rem}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+h1{font-size:clamp(34px,5vw,52px);font-weight:700;color:var(--text);line-height:1.15;letter-spacing:-1.2px;margin-bottom:1.1rem}
+h1 span{color:var(--blue)}
+.hero-desc{font-size:17px;color:var(--text2);line-height:1.8;margin-bottom:2.25rem}
+.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--blue);color:#fff;border:none;padding:12px 26px;border-radius:var(--r2);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;text-decoration:none;transition:opacity .15s;display:inline-block}
+.btn-primary:hover{opacity:.88}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border2);padding:12px 26px;border-radius:var(--r2);font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;text-decoration:none;transition:all .15s;display:inline-block}
+.btn-ghost:hover{border-color:#9ca3af;background:var(--bg)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:3.5rem auto 0;max-width:600px;border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.stat{padding:1.25rem .75rem;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-num{font-size:24px;font-weight:700;color:var(--text);letter-spacing:-.5px;line-height:1}
+.stat-label{font-size:11px;color:var(--text3);margin-top:4px}
+
+/* LAYOUT */
+.container{max-width:1080px;margin:0 auto;padding:0 2rem}
+section{padding:5rem 2rem}
+.sec-eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+h2{font-size:clamp(24px,3vw,34px);font-weight:700;color:var(--text);line-height:1.2;letter-spacing:-.4px;margin-bottom:.75rem}
+.sec-desc{font-size:15px;color:var(--text2);line-height:1.8;max-width:540px}
+hr{border:none;border-top:1px solid var(--border)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3rem}
+.about-copy p{font-size:15px;color:var(--text2);line-height:1.9;margin-bottom:1rem}
+.about-copy p:last-child{margin-bottom:0}
+.chips-label{font-size:12px;color:var(--text3);margin:1.5rem 0 .6rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--bg);border:1px solid var(--border);color:var(--text2);padding:4px 11px;border-radius:20px;font-size:12px}
+.feat-list{display:flex;flex-direction:column;gap:1px;border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;box-shadow:var(--shadow)}
+.feat{padding:1.25rem 1.25rem;display:flex;gap:12px;align-items:flex-start;background:var(--white);border-bottom:1px solid var(--border)}
+.feat:last-child{border-bottom:none}
+.feat-icon{width:36px;height:36px;border-radius:var(--r);background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.feat-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
+.feat-desc{font-size:13px;color:var(--text2);line-height:1.6}
+
+/* WHY */
+.why-bg{background:var(--bg)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:3rem}
+.why-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.75rem;box-shadow:var(--shadow)}
+.why-num{font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--text3);text-transform:uppercase;margin-bottom:12px}
+.why-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.why-desc{font-size:13px;color:var(--text2);line-height:1.75}
+
+/* BENEFITS */
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:3rem}
+.benefit{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem;box-shadow:var(--shadow)}
+.benefit-icon{font-size:22px;margin-bottom:.75rem}
+.benefit-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.benefit-desc{font-size:13px;color:var(--text2);line-height:1.65}
+.extras{margin-top:2rem}
+.extras-label{font-size:12px;color:var(--text3);margin-bottom:.6rem}
+
+/* TEAM */
+.team-bg{background:var(--bg)}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:3rem}
+.team-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.75rem;box-shadow:var(--shadow)}
+.team-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:.75rem}
+.team-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.team-desc{font-size:13px;color:var(--text2);line-height:1.75;margin-bottom:.75rem}
+.origin-chips{display:flex;flex-wrap:wrap;gap:6px}
+.origin-chip{background:var(--blue-light);border:1px solid var(--blue-mid);color:var(--blue-text);padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500}
+
+/* JOBS */
+.jobs-filter{display:flex;gap:8px;margin:2rem 0;flex-wrap:wrap}
+.filter-btn{background:transparent;border:1px solid var(--border);color:var(--text2);padding:7px 16px;border-radius:20px;font-size:13px;cursor:pointer;font-family:inherit;transition:all .15s}
+.filter-btn:hover{border-color:var(--border2);color:var(--text)}
+.filter-btn.active{background:var(--text);border-color:var(--text);color:#fff}
+.jd-wrap{display:flex;flex-direction:column;gap:10px}
+.jd-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.jd-card:hover,.jd-card.open{border-color:var(--border2);box-shadow:var(--shadow2)}
+.jd-head{padding:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.jd-head-left{flex:1}
+.jd-role{font-size:16px;font-weight:600;color:var(--text);margin-bottom:7px}
+.jd-meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.jd-salary{font-size:13px;font-weight:600;color:var(--blue-text);background:var(--blue-light);border:1px solid var(--blue-mid);padding:3px 10px;border-radius:20px}
+.jd-tag{font-size:12px;color:var(--text2);background:var(--bg);border:1px solid var(--border);padding:3px 10px;border-radius:20px}
+.jd-urgent{font-size:11px;font-weight:600;color:var(--green);background:var(--green-light);border:1px solid #a7f3d0;padding:3px 10px;border-radius:20px}
+.jd-toggle{width:30px;height:30px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:var(--text2);transition:all .2s}
+.jd-card.open .jd-toggle{transform:rotate(180deg);background:var(--blue-light);border-color:var(--blue-mid);color:var(--blue)}
+.jd-body{display:none;border-top:1px solid var(--border);padding:1.5rem;background:var(--bg)}
+.jd-body.show{display:block}
+.jd-highlight{border-left:3px solid var(--blue);background:var(--white);border-radius:0 var(--r) var(--r) 0;padding:12px 14px;margin-bottom:1.5rem;font-size:14px;color:var(--text2);line-height:1.75;font-style:italic}
+.jd-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;margin-bottom:1.5rem}
+.jd-col-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding-bottom:7px;border-bottom:1px solid var(--border);margin-bottom:10px}
+.jd-items{list-style:none}
+.jd-items li{font-size:13px;color:var(--text2);line-height:1.75;padding:3px 0 3px 14px;position:relative}
+.jd-items li::before{content:'';position:absolute;left:0;top:12px;width:4px;height:4px;border-radius:50%;background:var(--blue)}
+.bonus-wrap{margin-bottom:1.5rem}
+.bonus-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px}
+.bonus-tags{display:flex;flex-wrap:wrap;gap:6px}
+.bonus-tag{font-size:12px;color:var(--green);background:var(--green-light);border:1px solid #a7f3d0;padding:3px 11px;border-radius:20px}
+.jd-foot{border-top:1px solid var(--border);padding-top:1.25rem;display:flex;align-items:center;justify-content:flex-end}
+.apply-btn{background:var(--blue);color:#fff;border:none;padding:10px 22px;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}
+.apply-btn:hover{opacity:.88}
+
+/* CTA */
+.cta-bg{background:var(--bg);border-top:1px solid var(--border)}
+.cta-inner{max-width:520px;margin:0 auto;text-align:center}
+.cta-title{font-size:clamp(22px,3vw,30px);font-weight:700;color:var(--text);letter-spacing:-.3px;margin-bottom:.75rem}
+.cta-desc{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:2rem}
+.cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--white);border-top:1px solid var(--border);padding:1.75rem 2rem;text-align:center}
+footer p{font-size:13px;color:var(--text3)}
+footer a{color:var(--text2);text-decoration:none}
+footer a:hover{color:var(--text)}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.show{display:flex}
+.modal{background:var(--white);border:1px solid var(--border);border-radius:var(--r3);padding:2rem;max-width:460px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.15)}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.5rem;gap:1rem}
+.modal-title{font-size:19px;font-weight:700;color:var(--text)}
+.modal-job{font-size:13px;color:var(--text3);margin-top:3px}
+.modal-close{background:var(--bg);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s}
+.modal-close:hover{background:var(--border)}
+.contact-intro{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:1.1rem}
+.contact-email-box{background:var(--bg);border:1px solid var(--border);border-radius:var(--r2);padding:.9rem 1.1rem;margin-bottom:.9rem}
+.contact-email-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:5px}
+.contact-email{font-size:17px;font-weight:600;color:var(--text);word-break:break-all;letter-spacing:-.2px;line-height:1.4}
+.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.1rem}
+.contact-btn-primary{background:var(--blue);color:#fff;border:none;padding:11px;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}
+.contact-btn-primary:hover{opacity:.88}
+.contact-btn-secondary{background:var(--white);color:var(--text);border:1px solid var(--border2);padding:11px;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.contact-btn-secondary:hover{background:var(--bg);border-color:#9ca3af}
+.contact-tip{background:var(--blue-light);border:1px solid var(--blue-mid);border-radius:var(--r);padding:.8rem 1rem}
+.contact-tip-title{font-size:12px;font-weight:600;color:var(--blue-text);margin-bottom:6px}
+.contact-tip-list{list-style:none;padding:0;margin:0}
+.contact-tip-list li{font-size:12px;color:var(--blue-text);line-height:1.85;padding-left:13px;position:relative}
+.contact-tip-list li::before{content:'';position:absolute;left:3px;top:9px;width:4px;height:4px;border-radius:50%;background:var(--blue)}
+
+@media(max-width:768px){
+  .about-grid,.jd-cols{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .benefits-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--border)}
+  .nav-links{display:none}
+  .jd-head{padding:1.25rem}
+  .jd-body{padding:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-mark">CW</div>
+      <span class="nav-brand">CWILL 畅销家</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">关于我们</a>
+      <a href="#benefits">福利待遇</a>
+      <a href="#jobs">开放职位</a>
+    </div>
+    <a href="#jobs" class="nav-btn">查看职位</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><div class="hero-badge-dot"></div>We're hiring · 国家级高新科技企业 · 成立于 2014</div>
+    <h1>Build what's next in<br/><span>global eCommerce</span></h1>
+    <p class="hero-desc">加入 CWILL 畅销家，与来自 PayPal、华为、Airbnb 的精英一起，打造服务全球 30 万卖家的 B2B SaaS 平台。年复合增长率超 100%，且始终保持盈利。</p>
+    <div class="hero-actions">
+      <a href="#jobs" class="btn-primary">浏览开放职位</a>
+      <a href="#about" class="btn-ghost">了解我们</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">30万+</div><div class="stat-label">全球卖家</div></div>
+      <div class="stat"><div class="stat-num">100%+</div><div class="stat-label">年复合增长</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">SaaS 产品</div></div>
+      <div class="stat"><div class="stat-num">200+</div><div class="stat-label">全球团队</div></div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-eyebrow">About CWILL</div>
+    <h2>极少数兼具高速增长<br/>与盈利健康的科技公司</h2>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>CWILL（畅销家）于 2014 年在深圳成立，是一家深耕国际电商生态的 B2B SaaS 平台公司，专注于帮助全球跨境电商卖家提升销量、优化运营效率、拓展品牌影响力。</p>
+        <p>我们推出了超过 10 款 SaaS 产品，覆盖供应链优化、多语言店铺建设、营销策略、转化率提升、物流追踪和售后管理等全链路场景，旗下产品包括 ParcelWILL、TrustWILL、ChatWILL、SendWILL、SEOWILL 等。</p>
+        <p>公司自成立起保持盈利，年复合增长率持续超过 100%，是行业内极少数兼具高速增长与健康营收的互联网科技企业，目前已服务全球超过 30 万家企业，在 Shopify App Store 保持 4.9 星高评分，荣获 G2 多项年度大奖。</p>
+        <div class="chips-label">服务的知名客户与合作平台</div>
+        <div class="chips">
+          <span class="chip">Shopify</span><span class="chip">WooCommerce</span><span class="chip">Amazon</span>
+          <span class="chip">eBay</span><span class="chip">SHEIN</span><span class="chip">DJI</span>
+          <span class="chip">Banggood</span><span class="chip">LUX SKIN</span><span class="chip">BITTERLIEBE</span>
+        </div>
+      </div>
+      <div class="feat-list">
+        <div class="feat"><div class="feat-icon">🌐</div><div><div class="feat-title">全球化产品矩阵</div><div class="feat-desc">10+ SaaS 产品覆盖跨境电商全链路，从流量获取到售后服务，助力卖家在全球市场规模化增长。</div></div></div>
+        <div class="feat"><div class="feat-icon">📈</div><div><div class="feat-title">持续盈利，高速增长</div><div class="feat-desc">年复合增长率超 100%，始终保持盈利，是健康可持续的商业模式，你加入的是一家有真实收入的高速公司。</div></div></div>
+        <div class="feat"><div class="feat-icon">⭐</div><div><div class="feat-title">行业认可，客户信赖</div><div class="feat-desc">Shopify App Store 15,000+ 条评价，4.9 星均分，G2 多项年度大奖，Built for Shopify 认证。</div></div></div>
+        <div class="feat"><div class="feat-icon">🌍</div><div><div class="feat-title">国际化多元团队</div><div class="feat-desc">200+ 成员遍布全球，15% 有留学背景，20% 硕士以上，核心成员来自 PayPal、华为、Airbnb。</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- WHY JOIN -->
+<section class="why-bg" id="why">
+  <div class="container">
+    <div class="sec-eyebrow">Why CWILL</div>
+    <h2>六个选择我们的理由</h2>
+    <p class="sec-desc">不只是一份工作，而是一个让你真正发挥价值、快速成长、与优秀的人并肩作战的舞台。</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01 · Opportunity</div>
+        <div class="why-title">朝阳行业，稳健增长</div>
+        <div class="why-desc">跨境电商市场持续高速扩张，我们已服务超 30 万全球卖家，年复合增长率超 100% 且始终盈利。你加入的是一家有真实用户、真实收入的高速公司，而不是靠融资维持的泡沫。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02 · Compensation</div>
+        <div class="why-title">丰厚薪酬与合伙人通道</div>
+        <div class="why-desc">竞争力月薪 + 项目目标奖金 + 年终奖金 + 年底分红，公司预留大量合伙人通道，成为合伙人后享有股权激励。付出与回报完全正相关，真正创造价值的人成为公司增长的共同受益者。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03 · Growth</div>
+        <div class="why-title">真正的高速成长环境</div>
+        <div class="why-desc">业务高速增长意味着每个人都有机会承担更大的责任。提供培训报销、书籍采购、技术分享会全方位支持，让你的专业成长有实实在在的投入，不只是口头鼓励。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04 · Culture</div>
+        <div class="why-title">扁平开放的团队文化</div>
+        <div class="why-desc">公司没有"总"，只有哥和老师。以 90 后为主，年轻有活力，崇尚创新、追求卓越。扁平化管理让好想法被快速听见落地，每周篮球、羽毛球，工作之外一起运动。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05 · Care</div>
+        <div class="why-title">真心的员工关怀</div>
+        <div class="why-desc">七险一金之外额外购买重疾险与责任险；"畅基金"为遭遇重大困难的员工提供援助；女生专属假期、程序员节彩蛋、年度体检——每一项都不是走流程，是真心在意每位同事。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06 · Team</div>
+        <div class="why-title">高素质国际化团队</div>
+        <div class="why-desc">15% 成员有海外留学经历，20% 拥有硕士以上学历。核心成员来自 PayPal、华为、Airbnb，以及哥伦比亚大学、墨尔本大学、北京大学等顶尖学府，与聪明的人共事是最快的成长方式。</div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="container">
+    <div class="sec-eyebrow">Benefits</div>
+    <h2>我们认真对待每一位同事</h2>
+    <p class="sec-desc">丰富的福利体系，不是为了好看，而是真心希望你在这里过得好、长得快、待得久。</p>
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">🛡️</div>
+        <div class="benefit-title">七险一金 + 商业险</div>
+        <div class="benefit-desc">标准七险一金，额外为全体员工购买重疾险与责任险，保障更全面，让你和家人更安心。</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-title">多元薪酬激励</div>
+        <div class="benefit-desc">月薪 + 项目奖金 + 年终奖 + 年底分红，预留大量合伙人通道，成为合伙人后享有股权激励。</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📚</div>
+        <div class="benefit-title">学习成长全额支持</div>
+        <div class="benefit-desc">购书全额报销，外部培训费用报销，不定期技术分享与读书会，公司为你的成长持续真实投入。</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🏀</div>
+        <div class="benefit-title">运动活动</div>
+        <div class="benefit-desc">周二篮球、周四羽毛球、公司跑团，运动不只是为了健康，更是团队凝聚力的重要来源。</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🍱</div>
+        <div class="benefit-title">餐饮 & 下午茶</div>
+        <div class="benefit-desc">每月部门聚餐经费，不定期下午茶与水果零食，部门活动内容民主投票，氛围自由轻松。</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🌟</div>
+        <div class="benefit-title">特色假期与人文关怀</div>
+        <div class="benefit-desc">带薪年假、法定假日保障，女生每月专属半天假，"畅基金"应急援助，年度体检。</div>
+      </div>
+    </div>
+    <div class="extras">
+      <div class="extras-label">更多节日福利与活动</div>
+      <div class="chips">
+        <span class="chip">妇女节礼品</span><span class="chip">程序员节彩蛋</span>
+        <span class="chip">端午 / 中秋节福利</span><span class="chip">圣诞节活动</span>
+        <span class="chip">六一儿童节</span><span class="chip">年度体检</span>
+        <span class="chip">不定期团建旅行</span><span class="chip">畅基金援助</span>
+        <span class="chip">部门经费民主支配</span>
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- TEAM -->
+<section class="team-bg">
+  <div class="container">
+    <div class="sec-eyebrow">Our Team</div>
+    <h2>与聪明的人一起做有意思的事</h2>
+    <p class="sec-desc">技术扎实、思维开放，在高速增长的业务中共同探索边界。</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-label">🎓 学历背景</div>
+        <div class="team-title">高学历，爱学习</div>
+        <div class="team-desc">20% 团队成员拥有硕士及以上学历，15% 有海外留学背景。内部技术分享与读书分享会不定期举办，学习是我们的日常。</div>
+        <div class="origin-chips">
+          <span class="origin-chip">北京大学</span><span class="origin-chip">中南大学</span>
+          <span class="origin-chip">哥伦比亚大学</span><span class="origin-chip">墨尔本大学</span>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-label">🏢 从业背景</div>
+        <div class="team-title">顶尖企业出身</div>
+        <div class="team-desc">核心成员来自全球顶尖科技与互联网公司，带来成熟的行业经验与全球化视野，在 CWILL 继续创造更大影响力。</div>
+        <div class="origin-chips">
+          <span class="origin-chip">PayPal</span><span class="origin-chip">华为</span>
+          <span class="origin-chip">VIVO</span><span class="origin-chip">Airbnb</span>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-label">🌍 团队分布</div>
+        <div class="team-title">真正的国际化团队</div>
+        <div class="team-desc">200+ 成员分布在全球各地，具备真正的跨文化协作能力。在跨境电商这个天然国际化的赛道上，全球视野是基础素质。</div>
+      </div>
+      <div class="team-card">
+        <div class="team-label">🔥 团队文化</div>
+        <div class="team-title">年轻活力，扁平高效</div>
+        <div class="team-desc">90 后为主体，没有官僚气息，有的是直接沟通与快速行动。扁平化管理让好想法被快速验证，公司没有"总"，只有哥和老师。</div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- JOBS -->
+<section id="jobs">
+  <div class="container">
+    <div class="sec-eyebrow">Open Roles</div>
+    <h2>寻找下一位同行者</h2>
+    <p class="sec-desc">我们正在寻找有想法、有执行力、对全球电商充满热情的伙伴。</p>
+    <div class="jobs-filter">
+      <button class="filter-btn active" onclick="filterJobs('all',this)">全部职位 (5)</button>
+      <button class="filter-btn" onclick="filterJobs('product',this)">产品 & AI</button>
+      <button class="filter-btn" onclick="filterJobs('tech',this)">技术研发</button>
+      <button class="filter-btn" onclick="filterJobs('ops',this)">运营增长</button>
+    </div>
+    <div class="jd-wrap">
+
+      <!-- JD1 -->
+      <div class="jd-card" data-dept="product">
+        <div class="jd-head" onclick="toggleJD(this)">
+          <div class="jd-head-left">
+            <div class="jd-role">中高级产品经理（海外产品）</div>
+            <div class="jd-meta">
+              <span class="jd-salary">20 – 30K</span>
+              <span class="jd-tag">B端 SaaS</span><span class="jd-tag">深圳</span><span class="jd-tag">3年以上</span>
+            </div>
+          </div>
+          <div class="jd-toggle">▾</div>
+        </div>
+        <div class="jd-body">
+          <div class="jd-highlight">你不仅是需求的搬运工，更是商业问题的终结者。我们希望你用产品视角定义增长，而不只是执行需求清单。</div>
+          <div class="jd-cols">
+            <div>
+              <div class="jd-col-title">岗位职责</div>
+              <ul class="jd-items">
+                <li>深耕 SaaS / Tracking 场景，深度挖掘跨境电商 B 端客户的真实痛点，设计具有竞争壁垒的 SaaS 工具或平台解决方案</li>
+                <li>以"数据 + 用户洞察"双驱动模式定义产品 Roadmap，设计埋点体系与数据看板，以 GMV、履约时效、用户留存等核心指标持续迭代产品策略</li>
+                <li>主导 A/B 测试，用实验结果代替主观判断，串联研发、Marketing、客户成功团队推动项目高质量落地</li>
+                <li>在资源有限的情况下合理排优先级，识别并果断否定"伪需求"，保持产品聚焦</li>
+                <li>持续监控海外电商政策与竞品动态，预判未来 6–12 个月产品机会点，定期输出行业趋势快报</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jd-col-title">任职要求</div>
+              <ul class="jd-items">
+                <li>3 年以上产品经验，有 B 端产品或 SaaS 平台经验者优先</li>
+                <li>熟练使用 Axure / Sketch，具备基础 SQL 分析能力，熟悉 Google Analytics 等数据工具</li>
+                <li>PRD 文档清晰规范；逻辑与共情并重，能与技术聊架构，也能与 Marketing 聊增长</li>
+                <li>具备 MVP 思维，拒绝功能堆砌，对优秀产品有天然好奇心</li>
+                <li>主动拆解行业标杆，从中汲取灵感并内化为自身认知</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-wrap">
+            <div class="bonus-label">加分项</div>
+            <div class="bonus-tags">
+              <span class="bonus-tag">英语可作为工作语言</span>
+              <span class="bonus-tag">有海外团队对接经验</span>
+              <span class="bonus-tag">熟悉跨境电商业务链路</span>
+            </div>
+          </div>
+          <div class="jd-foot"><button class="apply-btn" onclick="openModal('中高级产品经理（海外产品）')">立即投递 →</button></div>
+        </div>
+      </div>
+
+      <!-- JD2 -->
+      <div class="jd-card" data-dept="tech">
+        <div class="jd-head" onclick="toggleJD(this)">
+          <div class="jd-head-left">
+            <div class="jd-role">高级运维工程师（海外云）</div>
+            <div class="jd-meta">
+              <span class="jd-salary">25 – 35K</span>
+              <span class="jd-tag">AWS / GCP</span><span class="jd-tag">Kubernetes</span><span class="jd-tag">深圳</span><span class="jd-tag">5年以上</span>
+            </div>
+          </div>
+          <div class="jd-toggle">▾</div>
+        </div>
+        <div class="jd-body">
+          <div class="jd-highlight">负责保障全球 SaaS 产品基础设施的稳定与安全运行，在多云架构上构建高可用、高弹性的运维体系，是支撑公司业务持续增长的核心岗位。</div>
+          <div class="jd-cols">
+            <div>
+              <div class="jd-col-title">岗位职责</div>
+              <ul class="jd-items">
+                <li>负责 AWS（主要）及 GCP、阿里云的日常资源管理、实例维护与成本优化，实施多云环境运维策略</li>
+                <li>负责 Kubernetes 集群的日常管理与维护，维护 CI/CD 流水线，确保应用高效稳定交付</li>
+                <li>参与 OpenSearch、Prometheus、Grafana、ELK、Zabbix 等监控与日志平台建设及维护</li>
+                <li>负责 MySQL、PostgreSQL、Redis、MongoDB 数据库及 Kafka、RabbitMQ、Nginx 等中间件的日常运维</li>
+                <li>编写 Shell / Python / Go 脚本提升运维效率，对运维工具进行二次开发与优化</li>
+                <li>配合推进 GDPR、SOC2 等合规整改，执行权限最小化、安全审计等安全策略</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jd-col-title">任职要求</div>
+              <ul class="jd-items">
+                <li>大专及以上，计算机相关专业，5 年以上互联网 / SaaS 公司运维经验</li>
+                <li>熟悉 AWS 或 GCP 常用服务（EC2、S3、RDS、VPC 等），掌握 Docker 与 Kubernetes 日常管理</li>
+                <li>熟悉 Prometheus、Grafana、ELK、Zabbix 的部署和维护</li>
+                <li>具备 MySQL / Redis 等数据库日常运维与优化经验，熟练掌握 Linux 管理与故障排查</li>
+                <li>具备 Python / Go / Shell 脚本编写能力，有 Ansible、Terraform、Jenkins、ArgoCD 等工具经验</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-wrap">
+            <div class="bonus-label">加分项</div>
+            <div class="bonus-tags">
+              <span class="bonus-tag">AWS + GCP 多云混合部署经验</span>
+              <span class="bonus-tag">云原生（ServiceMesh / Helm / ArgoCD）</span>
+              <span class="bonus-tag">合规整改 / 安全审计经验</span>
+              <span class="bonus-tag">国际化 SaaS 运维经验</span>
+            </div>
+          </div>
+          <div class="jd-foot"><button class="apply-btn" onclick="openModal('高级运维工程师（海外云）')">立即投递 →</button></div>
+        </div>
+      </div>
+
+      <!-- JD3 -->
+      <div class="jd-card" data-dept="tech">
+        <div class="jd-head" onclick="toggleJD(this)">
+          <div class="jd-head-left">
+            <div class="jd-role">Golang 中高级工程师</div>
+            <div class="jd-meta">
+              <span class="jd-salary">18 – 30K</span>
+              <span class="jd-tag">后端开发</span><span class="jd-tag">微服务</span><span class="jd-tag">深圳</span><span class="jd-tag">3年 Go 经验</span>
+            </div>
+          </div>
+          <div class="jd-toggle">▾</div>
+        </div>
+        <div class="jd-body">
+          <div class="jd-highlight">负责核心业务系统架构设计与高并发场景技术攻坚，在真实的大规模 SaaS 流量场景下锻炼技术能力，有机会主导重要系统从零到一的构建。</div>
+          <div class="jd-cols">
+            <div>
+              <div class="jd-col-title">岗位职责</div>
+              <ul class="jd-items">
+                <li>负责后端业务系统核心模块的架构设计与开发，保障系统性能、可用性及可扩展性</li>
+                <li>主导技术选型与项目重构，推动代码分层规范化、数据结构化，提升系统可维护性</li>
+                <li>编写高质量技术文档与 API 文档，确保知识沉淀与团队协作顺畅</li>
+                <li>参与高并发、高性能场景下的技术攻坚，主导核心架构设计，跟进前沿技术动态</li>
+                <li>指导初中级开发人员，组织技术分享与代码评审，提升团队整体技术能力</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jd-col-title">任职要求</div>
+              <ul class="jd-items">
+                <li>计算机相关专业，专科及以上，5 年以上开发经验，至少 3 年 Golang 开发经验</li>
+                <li>熟练掌握 Go 及常见组件（gin、viper、cobra、zap、testify、nacos 等）</li>
+                <li>熟悉 MySQL、Redis 分布式缓存设计，以及 Kafka / RocketMQ / RabbitMQ 等消息队列</li>
+                <li>熟练使用 gorm / xorm，熟悉微服务架构及 gRPC（go-micro / kratos / kitex）</li>
+                <li>熟悉 Linux，了解 Docker 及 DevOps CI/CD 流水线，具备良好沟通与抽象能力</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-wrap">
+            <div class="bonus-label">加分项</div>
+            <div class="bonus-tags">
+              <span class="bonus-tag">0→1 Go 微服务或大型系统重构经验</span>
+              <span class="bonus-tag">Jaeger / SkyWalking 链路追踪</span>
+              <span class="bonus-tag">Prometheus / Grafana 监控体系</span>
+              <span class="bonus-tag">AI 项目落地 / Langchain / Langgraph</span>
+            </div>
+          </div>
+          <div class="jd-foot"><button class="apply-btn" onclick="openModal('Golang 中高级工程师')">立即投递 →</button></div>
+        </div>
+      </div>
+
+      <!-- JD4 -->
+      <div class="jd-card" data-dept="product">
+        <div class="jd-head" onclick="toggleJD(this)">
+          <div class="jd-head-left">
+            <div class="jd-role">AI 解决方案 / 产品经理（效率效能）</div>
+            <div class="jd-meta">
+              <span class="jd-salary">20 – 30K</span>
+              <span class="jd-tag">AI 产品</span><span class="jd-tag">企业效率</span><span class="jd-tag">深圳</span><span class="jd-tag">5–8 年经验</span>
+            </div>
+          </div>
+          <div class="jd-toggle">▾</div>
+        </div>
+        <div class="jd-body">
+          <div class="jd-highlight">角色定位：BA + 产品经理 + PMO 三合一。面向流程体系型（SA / BA / PMO）、企业效率工具产品（协同办公 / 工作流 / 低代码平台）、研发效能产品三类背景人才开放。</div>
+          <div class="jd-cols">
+            <div>
+              <div class="jd-col-title">岗位职责</div>
+              <ul class="jd-items">
+                <li>规划并落地公司 AI 应用产品与组织效率提升体系，通过 AI 技术改造研发、运营、客服、内容等核心业务流程</li>
+                <li>打造企业级 AI 工作助手（AI Copilot）和自动化工作流体系，推动 AI 规模化应用</li>
+                <li>统筹管理公司办公协同系统整体规划（工具选型、使用规范、系统推广与优化）</li>
+                <li>深入调研各业务团队效率瓶颈，识别 AI 提效关键场景，输出系统化产品解决方案</li>
+                <li>设计 AI Agent 工作流，建立效能度量体系（使用率 / 自动化比例 / ROI），持续优化 AI 应用效果</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jd-col-title">任职要求</div>
+              <ul class="jd-items">
+                <li>本科及以上，5–8 年产品经理经验，有 AI 应用产品 / 企业效率工具 / 内部工具平台经验者优先</li>
+                <li>能快速理解复杂业务流程，识别 AI 应用机会；有客服系统、运营工具经验者优先</li>
+                <li>熟悉 Prompt Engineering、AI Copilot、RAG、AI Agent、LLM 应用设计等典型落地场景</li>
+                <li>具备 AI 应用产品设计能力，能推动 AI 产品从 0 到 1 落地</li>
+                <li>优秀的跨部门沟通与项目推进能力，能推动组织变革与产品落地</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-wrap">
+            <div class="bonus-label">加分项</div>
+            <div class="bonus-tags">
+              <span class="bonus-tag">AI 应用产品成功落地案例</span>
+              <span class="bonus-tag">客服 / 营销 / 内容 AI 经验</span>
+              <span class="bonus-tag">研发效能 / 企业效率平台经验</span>
+            </div>
+          </div>
+          <div class="jd-foot"><button class="apply-btn" onclick="openModal('AI 解决方案 / 产品经理（效率效能）')">立即投递 →</button></div>
+        </div>
+      </div>
+
+      <!-- JD5 -->
+      <div class="jd-card" data-dept="ops">
+        <div class="jd-head" onclick="toggleJD(this)">
+          <div class="jd-head-left">
+            <div class="jd-role">英文 SEO 运营</div>
+            <div class="jd-meta">
+              <span class="jd-salary">15 – 22K</span>
+              <span class="jd-tag">海外 SEO</span><span class="jd-tag">英语优先</span><span class="jd-tag">深圳</span><span class="jd-tag">3年以上</span>
+            </div>
+          </div>
+          <div class="jd-toggle">▾</div>
+        </div>
+        <div class="jd-body">
+          <div class="jd-highlight">负责驱动海外网站的自然流量增长，在真实的全球化市场中制定并执行 SEO 策略，是公司海外品牌增长的重要引擎，内容面向全球英语用户。</div>
+          <div class="jd-cols">
+            <div>
+              <div class="jd-col-title">岗位职责</div>
+              <ul class="jd-items">
+                <li>负责海外网站 SEO 整体策略制定与执行，以提升自然流量、关键词排名和页面转化率为核心目标</li>
+                <li>负责高质量英文 SEO 内容的策划、撰写和优化（网页文案、博客、产品描述、落地页等）</li>
+                <li>深入挖掘分析关键词，结合目标用户画像制定精准内容策略，持续推动内容原创和迭代优化</li>
+                <li>利用 Google Analytics、Search Console、Ahrefs、Similarweb 等工具监控分析 SEO 数据</li>
+                <li>负责网站结构优化、内链布局、页面速度提升及异常页面处理</li>
+                <li>结合市场热点策划内容推广活动，配合 EDM、社交媒体、YouTube 等多渠道协同运营</li>
+                <li>应用 AI 工具提升内容创作效率，负责外链建设，定期撰写 SEO 效果分析报告</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jd-col-title">任职要求</div>
+              <ul class="jd-items">
+                <li>本科及以上，英语专业优先；书面与口语优秀，雅思 7 分及以上或同等水平优先</li>
+                <li>3 年以上海外 SEO 内容运营经验，具备扎实 SEO 理论基础和丰富实操经验</li>
+                <li>熟练掌握 Google Analytics、Search Console、Ahrefs、Similarweb、SEMrush 等 SEO 工具</li>
+                <li>具备优秀的英文内容策划与原创写作能力，能将产品价值转化为高质量内容</li>
+                <li>具备良好的数据分析能力，擅长数据驱动内容优化；具备良好跨部门协作能力</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-wrap">
+            <div class="bonus-label">加分项</div>
+            <div class="bonus-tags">
+              <span class="bonus-tag">AI 内容生成工具实战经验</span>
+              <span class="bonus-tag">多渠道内容矩阵运营经验</span>
+              <span class="bonus-tag">跨境电商行业背景</span>
+            </div>
+          </div>
+          <div class="jd-foot"><button class="apply-btn" onclick="openModal('英文 SEO 运营')">立即投递 →</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<hr/>
+
+<!-- CTA -->
+<section class="cta-bg">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="sec-eyebrow" style="text-align:center">Join us</div>
+      <div class="cta-title">没有看到合适的职位？</div>
+      <p class="cta-desc">如果你对 CWILL 充满热情，欢迎主动联系我们。优秀的人永远值得等待，我们会在合适的时机联系你。</p>
+      <div class="cta-row">
+        <button class="btn-primary" onclick="openModal('自主投递')">主动投递简历</button>
+        <a href="https://www.cwill.com" class="btn-ghost" target="_blank">了解 CWILL 产品 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2025 CWILL 畅销家 · 国家级高新科技企业 · 深圳 &nbsp;|&nbsp; <a href="https://www.cwill.com" target="_blank">www.cwill.com</a></p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div class="modal-title">联系我们投递</div>
+        <div class="modal-job" id="modal-job-name"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+
+    <div class="contact-intro">感谢你对该岗位的关注！请通过下方邮箱发送简历，HR 会在 3 个工作日内回复。</div>
+
+    <div class="contact-email-box">
+      <div class="contact-email-label">📧 投递邮箱</div>
+      <div class="contact-email" id="contact-email">liangzhimingzm@gmail.com</div>
+    </div>
+
+    <div class="contact-actions">
+      <button class="contact-btn-primary" id="copy-btn" onclick="copyEmail()">复制邮箱</button>
+      <a class="contact-btn-secondary" id="mailto-link" href="#">打开邮件客户端</a>
+    </div>
+
+    <div class="contact-tip">
+      <div class="contact-tip-title">建议邮件包含以下内容</div>
+      <ul class="contact-tip-list">
+        <li>姓名与联系电话</li>
+        <li>简历附件，或在线简历链接（Boss 直聘 / 领英 / 个人网站等）</li>
+        <li>简短自我介绍，以及为什么对该岗位感兴趣</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+var currentJob='';
+function toggleJD(header){
+  var card=header.closest('.jd-card');
+  var body=card.querySelector('.jd-body');
+  var isOpen=card.classList.contains('open');
+  document.querySelectorAll('.jd-card').forEach(function(c){c.classList.remove('open');c.querySelector('.jd-body').classList.remove('show')});
+  if(!isOpen){card.classList.add('open');body.classList.add('show');setTimeout(function(){card.scrollIntoView({behavior:'smooth',block:'nearest'})},60)}
+}
+function filterJobs(dept,btn){
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  document.querySelectorAll('.jd-card').forEach(function(card){
+    if(dept==='all'||card.dataset.dept===dept){card.style.display=''}
+    else{card.style.display='none';card.classList.remove('open');card.querySelector('.jd-body').classList.remove('show')}
+  });
+}
+var CONTACT_EMAIL='liangzhimingzm@gmail.com';
+var MODAL_DISABLED=true;
+
+function openModal(job){
+  if(MODAL_DISABLED)return;
+  currentJob=job;
+  document.getElementById('modal-job-name').textContent='应聘职位：'+job;
+  var subject=encodeURIComponent('【求职应聘】'+job);
+  var body=encodeURIComponent('您好，\n\n我希望应聘 '+job+' 岗位。\n\n姓名：\n联系电话：\n\n简历链接 / 附件：\n\n自我介绍：\n\n\n谢谢！');
+  document.getElementById('mailto-link').href='mailto:'+CONTACT_EMAIL+'?subject='+subject+'&body='+body;
+  var btn=document.getElementById('copy-btn');
+  btn.textContent='复制邮箱';
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modal').classList.remove('show');
+  document.body.style.overflow='';
+}
+document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+
+function copyEmail(){
+  var btn=document.getElementById('copy-btn');
+  function done(){
+    btn.textContent='已复制 ✓';
+    setTimeout(function(){btn.textContent='复制邮箱'},1600);
+  }
+  function fallback(){
+    var ta=document.createElement('textarea');
+    ta.value=CONTACT_EMAIL;
+    ta.style.position='fixed';ta.style.left='-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try{document.execCommand('copy');done()}catch(e){btn.textContent='请手动复制'}
+    document.body.removeChild(ta);
+  }
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(CONTACT_EMAIL).then(done).catch(fallback);
+  }else{
+    fallback();
+  }
+}
+</script>
+</body>
+</html>

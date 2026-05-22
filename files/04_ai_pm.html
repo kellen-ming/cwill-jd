@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>AI 解决方案 / 产品经理（效率效能）— CWILL 畅销家</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--white:#fff;--bg:#f7f8fa;--text:#111827;--text2:#6b7280;--text3:#9ca3af;--border:#e5e7eb;--blue:#2563eb;--blue-light:#eff6ff;--blue-mid:#bfdbfe;--blue-text:#1d4ed8;--green:#059669;--green-light:#ecfdf5;--r:8px;--r2:12px;--r3:16px;--shadow2:0 4px 20px rgba(0,0,0,.08)}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+nav{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:62px;position:sticky;top:0;z-index:100}
+.nav-inner{max-width:860px;margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-mark{width:32px;height:32px;background:var(--text);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff}
+.nav-brand{font-size:15px;font-weight:600;color:var(--text)}
+.nav-link{font-size:13px;color:var(--text2);text-decoration:none;transition:color .15s}.nav-link:hover{color:var(--text)}
+.page{max-width:860px;margin:0 auto;padding:3rem 2rem 5rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--r3);box-shadow:var(--shadow2);overflow:hidden}
+.card-header{padding:2.5rem;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+h1{font-size:clamp(22px,4vw,32px);font-weight:700;color:var(--text);line-height:1.2;letter-spacing:-.5px;margin-bottom:1rem}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap}
+.badge{font-size:12px;padding:4px 12px;border-radius:20px;font-weight:500}
+.b-blue{color:var(--blue-text);background:var(--blue-light);border:1px solid var(--blue-mid);font-weight:600;font-size:13px}
+.b-gray{color:var(--text2);background:var(--bg);border:1px solid var(--border)}
+.co-strip{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.5rem 2.5rem;display:grid;grid-template-columns:repeat(4,1fr)}
+.co-item{text-align:center;padding:.5rem;border-right:1px solid var(--border)}.co-item:last-child{border-right:none}
+.co-num{font-size:20px;font-weight:700;color:var(--text);letter-spacing:-.5px}.co-lbl{font-size:11px;color:var(--text3);margin-top:2px}
+.card-body{padding:2.5rem}
+.highlight{border-left:3px solid var(--blue);background:var(--blue-light);border-radius:0 var(--r) var(--r) 0;padding:14px 16px;margin-bottom:2rem;font-size:14px;color:var(--blue-text);line-height:1.75;font-style:italic}
+.role-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:2rem}
+.role-tag{font-size:12px;color:var(--blue-text);background:var(--blue-light);border:1px solid var(--blue-mid);padding:5px 14px;border-radius:20px;font-weight:500}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem}
+h2{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding-bottom:8px;border-bottom:1px solid var(--border);margin-bottom:12px}
+ul.list{list-style:none}
+ul.list li{font-size:13.5px;color:var(--text2);line-height:1.75;padding:3px 0 3px 16px;position:relative}
+ul.list li::before{content:'';position:absolute;left:0;top:13px;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+hr{border:none;border-top:1px solid var(--border);margin:1.75rem 0}
+.bonus-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px}
+.bonus-tags{display:flex;flex-wrap:wrap;gap:7px}
+.bonus-tag{font-size:12px;color:var(--green);background:var(--green-light);border:1px solid #a7f3d0;padding:4px 12px;border-radius:20px}
+.card-footer{padding:1.5rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.foot-note{font-size:12px;color:var(--text3)}
+.btn-primary{background:var(--blue);color:#fff;border:none;padding:11px 28px;border-radius:var(--r2);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}.btn-primary:hover{opacity:.88}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:200;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.show{display:flex}
+.modal{background:var(--white);border:1px solid var(--border);border-radius:var(--r3);padding:2rem;max-width:460px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.5rem;gap:1rem}
+.modal-title{font-size:18px;font-weight:700;color:var(--text)}.modal-job{font-size:13px;color:var(--text3);margin-top:3px}
+.modal-close{background:var(--bg);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mf{margin-bottom:13px}.ml{font-size:13px;font-weight:500;color:var(--text2);margin-bottom:5px;display:block}
+.mi{width:100%;background:var(--white);border:1px solid var(--border);color:var(--text);border-radius:var(--r);padding:10px 13px;font-size:14px;font-family:inherit;outline:none;transition:border-color .15s}
+.mi:focus{border-color:var(--blue)}.mi::placeholder{color:var(--text3)}
+textarea.mi{resize:vertical;min-height:80px}
+.mhint{font-size:12px;color:var(--text3);margin-top:4px}
+.msub{width:100%;background:var(--blue);color:#fff;border:none;padding:12px;border-radius:var(--r);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:.5rem;transition:opacity .15s}.msub:hover{opacity:.88}
+.mnote{font-size:12px;color:var(--text3);text-align:center;margin-top:10px}
+footer{text-align:center;padding:1.5rem;font-size:12px;color:var(--text3)}
+footer a{color:var(--text2);text-decoration:none}
+@media(max-width:640px){.two-col{grid-template-columns:1fr}.co-strip{grid-template-columns:repeat(2,1fr)}.co-item:nth-child(2){border-right:none}.co-item:nth-child(1),.co-item:nth-child(2){border-bottom:1px solid var(--border)}.card-header,.card-body,.card-footer{padding:1.5rem}.co-strip{padding:1.25rem}}
+</style></head><body>
+<nav><div class="nav-inner">
+  <a href="#" class="nav-logo"><div class="nav-mark">CW</div><span class="nav-brand">CWILL 畅销家</span></a>
+  <a href="https://www.cwill.com" class="nav-link" target="_blank">了解公司 →</a>
+</div></nav>
+<div class="page"><div class="card">
+  <div class="card-header">
+    <div class="eyebrow">Open Role · 产品 &amp; AI</div>
+    <h1>AI 解决方案 / 产品经理<br/>（效率效能）</h1>
+    <div class="badge-row">
+      <span class="badge b-blue">20 – 30K</span>
+      <span class="badge b-gray">AI 产品</span>
+      <span class="badge b-gray">企业效率</span>
+      <span class="badge b-gray">深圳</span>
+      <span class="badge b-gray">5–8 年经验</span>
+    </div>
+  </div>
+  <div class="co-strip">
+    <div class="co-item"><div class="co-num">30万+</div><div class="co-lbl">全球卖家</div></div>
+    <div class="co-item"><div class="co-num">100%+</div><div class="co-lbl">年复合增长</div></div>
+    <div class="co-item"><div class="co-num">10+</div><div class="co-lbl">SaaS 产品</div></div>
+    <div class="co-item"><div class="co-num">200+</div><div class="co-lbl">全球团队</div></div>
+  </div>
+  <div class="card-body">
+    <div class="highlight">角色定位：BA + 产品经理 + PMO 三合一。面向流程体系型（SA / BA / PMO）、企业效率工具产品（协同办公 / 工作流 / 低代码平台）、研发效能产品三类背景人才开放。</div>
+    <div style="margin-bottom:1.5rem">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">适合以下背景人才</div>
+      <div class="role-tags">
+        <span class="role-tag">流程架构师 / SA / BA / PMO</span>
+        <span class="role-tag">协同办公 / 工作流 / 低代码平台</span>
+        <span class="role-tag">研发效能产品经验</span>
+      </div>
+    </div>
+    <div class="two-col">
+      <div>
+        <h2>岗位职责</h2>
+        <ul class="list">
+          <li>规划并落地公司 AI 应用产品与组织效率提升体系，通过 AI 技术改造研发、运营、客服、内容等核心业务流程</li>
+          <li>打造企业级 AI 工作助手（AI Copilot）和自动化工作流体系，推动 AI 规模化应用，实现组织效率整体升级</li>
+          <li>统筹管理公司办公协同系统整体规划（工具选型、使用规范制定、系统推广与优化）</li>
+          <li>深入调研各业务团队效率瓶颈，识别 AI 提效关键场景，输出系统化产品解决方案</li>
+          <li>设计 AI 自动化流程与 AI Agent 工作流，建立效能度量体系（使用率 / 自动化比例 / ROI），持续优化 AI 应用效果</li>
+          <li>推动 AI 工具在公司内部规模化应用，组织培训，建立规范，制定安全合规与权限管控机制</li>
+        </ul>
+      </div>
+      <div>
+        <h2>任职要求</h2>
+        <ul class="list">
+          <li>本科及以上学历，5–8 年产品经理经验，有 AI 应用产品 / 企业效率工具 / 内部工具平台经验者优先</li>
+          <li>能快速理解复杂业务流程，识别 AI 应用机会；有客服系统、运营工具、协同办公产品经验者优先</li>
+          <li>熟悉 Prompt Engineering、AI Copilot、RAG、AI Agent 工作流、LLM 应用设计等典型落地场景，了解模型能力边界</li>
+          <li>具备 AI 应用产品设计能力，能推动 AI 产品从 0 到 1 落地</li>
+          <li>具备较强的业务抽象与流程梳理能力，优秀的跨部门沟通与项目推进能力，能推动组织变革与产品落地</li>
+        </ul>
+      </div>
+    </div>
+    <hr/>
+    <div class="bonus-label">加分项</div>
+    <div class="bonus-tags">
+      <span class="bonus-tag">AI 应用产品成功落地案例</span>
+      <span class="bonus-tag">客服 AI / 营销 AI / 内容 AI 经验</span>
+      <span class="bonus-tag">研发效能 / 企业效率平台经验</span>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="foot-note">CWILL 畅销家 · 深圳 · 国家级高新科技企业</span>
+    <button class="btn-primary" onclick="openModal()">立即投递 →</button>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div><div class="modal-title">投递简历</div><div class="modal-job">应聘职位：AI 解决方案 / 产品经理（效率效能）</div></div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="mf"><label class="ml">姓名 *</label><input id="f-name" type="text" class="mi" placeholder="请输入您的姓名"/></div>
+    <div class="mf"><label class="ml">联系电话 *</label><input id="f-phone" type="tel" class="mi" placeholder="请输入手机号码"/></div>
+    <div class="mf"><label class="ml">电子邮箱 *</label><input id="f-email" type="email" class="mi" placeholder="请输入常用邮箱"/></div>
+    <div class="mf"><label class="ml">简历链接（选填）</label><input id="f-resume" type="text" class="mi" placeholder="Boss直聘 / 领英 / 个人网站等在线简历链接"/></div>
+    <div class="mf"><label class="ml">自我介绍 *</label><textarea id="f-intro" class="mi" placeholder="请简单介绍您的背景，以及为什么对该岗位感兴趣（100字以上更佳）"></textarea><div class="mhint">充分的自我介绍有助于我们更快评估并与您联系</div></div>
+    <button class="msub" onclick="submitForm()">提交申请</button>
+    <div class="mnote">提交后我们将尽快通过邮件与您联系</div>
+  </div>
+</div>
+<script>
+function openModal(){document.getElementById('modal').classList.add('show');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('show');document.body.style.overflow=''}
+document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+function submitForm(){
+  var n=document.getElementById('f-name').value.trim(),p=document.getElementById('f-phone').value.trim(),e=document.getElementById('f-email').value.trim(),i=document.getElementById('f-intro').value.trim();
+  if(!n||!p||!e||!i){alert('请填写姓名、联系电话、邮箱和自我介绍');return}
+  var r=document.getElementById('f-resume').value.trim();
+  var body='应聘职位：AI 解决方案 / 产品经理（效率效能）\n\n姓名：'+n+'\n联系电话：'+p+'\n邮箱：'+e+(r?'\n简历链接：'+r:'')+'\n\n自我介绍：\n'+i;
+  window.location.href='mailto:liangzhimingzm@gmail.com?subject='+encodeURIComponent('【求职应聘】AI 解决方案 / 产品经理（效率效能）— '+n)+'&body='+encodeURIComponent(body);
+  setTimeout(closeModal,300);
+}
+</script>
+<footer><p>© 2025 CWILL 畅销家 · <a href="https://www.cwill.com" target="_blank">www.cwill.com</a></p></footer>
+</body></html>
