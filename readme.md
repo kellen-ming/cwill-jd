@@ -173,12 +173,6 @@ bGlhbmd6aGltaW5nem1AZ21haWwuY29t
 Wk0xMTU0OTM5NDEw
 ```
 
-**解码方式**（任选其一）：
-
-- 命令行：`echo "bGlhbmd6aGltaW5nem1AZ21haWwuY29t" | base64 -d`
-- 浏览器控制台：`atob("bGlhbmd6aGltaW5nem1AZ21haWwuY29t")`
-- 在线工具：[base64decode.org](https://www.base64decode.org)
-
 **邮件主题建议**：`【内推】岗位名 - 姓名`（例：`【内推】Golang 中高级工程师 - 张三`）
 
 **邮件请包含**：
