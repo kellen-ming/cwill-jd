@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import ScreenshotButton from '@/app/components/ScreenshotButton';
 import { COMPANY_STATS, getJobBySlug, jobs } from '@/lib/jobs';
 
 type RouteParams = { slug: string };
@@ -74,99 +75,107 @@ export default async function JobDetailPage({
       </div>
 
       <div className="page">
-        <div className="card">
-          <div className="card-header">
-            <div className="eyebrow">{job.category}</div>
-            <h1>{titleEl}</h1>
-            <div className="badge-row">
-              <span className="badge b-blue">{job.salary}</span>
-              {job.tags.map((tag, idx) => {
-                const isLast = idx === job.tags.length - 1;
-                const text = isLast && !tag.includes('经验') ? `${tag}经验` : tag;
-                return (
-                  <span key={tag} className="badge b-gray">
-                    {text}
-                  </span>
-                );
-              })}
-              {job.urgent && <span className="badge b-green">急需</span>}
-            </div>
-          </div>
-
-          <div className="co-strip">
-            {COMPANY_STATS.map((s) => (
-              <div key={s.label} className="co-item">
-                <div className="co-num">{s.num}</div>
-                <div className="co-lbl">{s.label}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="card-body">
-            <div className="highlight">{job.highlightDetail}</div>
-
-            {job.roleTags && (
-              <div style={{ marginBottom: '1.5rem' }}>
-                <div className="role-tags-label">{job.roleTags.label}</div>
-                <div className="role-tags">
-                  {job.roleTags.items.map((t) => (
-                    <span key={t} className="role-tag">
-                      {t}
+        <div className="screenshot-frame" id="job-detail-screenshot">
+          <div className="card" id="job-detail-card">
+            <div className="card-header">
+              <div className="eyebrow">{job.category}</div>
+              <h1>{titleEl}</h1>
+              <div className="badge-row">
+                <span className="badge b-blue">{job.salary}</span>
+                {job.tags.map((tag, idx) => {
+                  const isLast = idx === job.tags.length - 1;
+                  const text = isLast && !tag.includes('经验') ? `${tag}经验` : tag;
+                  return (
+                    <span key={tag} className="badge b-gray">
+                      {text}
                     </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="two-col">
-              <div>
-                <h2>岗位职责</h2>
-                <ul className="list">
-                  {job.responsibilities.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h2>任职要求</h2>
-                <ul className="list">
-                  {job.requirements.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
+                  );
+                })}
+                {job.urgent && <span className="badge b-green">急需</span>}
               </div>
             </div>
 
-            {job.tools && (
-              <>
-                <div className="tools-label">{job.tools.label}</div>
-                <div className="tools">
-                  {job.tools.items.map((t) => (
-                    <span key={t} className="tool-chip">
-                      {t}
-                    </span>
-                  ))}
+            <div className="co-strip">
+              {COMPANY_STATS.map((s) => (
+                <div key={s.label} className="co-item">
+                  <div className="co-num">{s.num}</div>
+                  <div className="co-lbl">{s.label}</div>
                 </div>
-              </>
-            )}
-
-            <hr />
-            <div className="bonus-label">加分项</div>
-            <div className="bonus-tags">
-              {job.bonus.map((b) => (
-                <span key={b} className="bonus-tag">
-                  {b}
-                </span>
               ))}
             </div>
-          </div>
 
-          <div className="card-footer">
-            <span className="foot-note">CWILL 畅销家 · 深圳 · 国家级高新科技企业</span>
-            <Link className="foot-back" href="/">
-              ← 回到所有岗位
-            </Link>
+            <div className="card-body">
+              <div className="highlight">{job.highlightDetail}</div>
+
+              {job.roleTags && (
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <div className="role-tags-label">{job.roleTags.label}</div>
+                  <div className="role-tags">
+                    {job.roleTags.items.map((t) => (
+                      <span key={t} className="role-tag">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="two-col">
+                <div>
+                  <h2>岗位职责</h2>
+                  <ul className="list">
+                    {job.responsibilities.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h2>任职要求</h2>
+                  <ul className="list">
+                    {job.requirements.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {job.tools && (
+                <>
+                  <div className="tools-label">{job.tools.label}</div>
+                  <div className="tools">
+                    {job.tools.items.map((t) => (
+                      <span key={t} className="tool-chip">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              <hr />
+              <div className="bonus-label">加分项</div>
+              <div className="bonus-tags">
+                {job.bonus.map((b) => (
+                  <span key={b} className="bonus-tag">
+                    {b}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="card-footer">
+              <span className="foot-note">CWILL 畅销家 · 深圳 · 国家级高新科技企业</span>
+              <Link className="foot-back" href="/">
+                ← 回到所有岗位
+              </Link>
+            </div>
           </div>
+        </div>
+        <div className="screenshot-actions">
+          <ScreenshotButton
+            targetSelector="#job-detail-screenshot"
+            defaultFileName={`cwill-${job.slug}-${job.title}`}
+          />
         </div>
       </div>
 
