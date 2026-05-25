@@ -8,7 +8,6 @@ export interface OptionalSection {
 export interface Job {
   slug: string;
   title: string;
-  titleLines?: [string, string];
   category: string;
   dept: JobDept;
   salary: string;
@@ -33,7 +32,6 @@ export const jobs: Job[] = [
   {
     slug: '01_pm_overseas',
     title: '中高级产品经理（海外产品）',
-    titleLines: ['中高级产品经理', '（海外产品）'],
     category: 'Open Role · 产品 & SaaS',
     dept: 'product',
     salary: '15 – 25K',
@@ -62,7 +60,6 @@ export const jobs: Job[] = [
   {
     slug: '02_devops',
     title: '高级运维工程师（海外云）',
-    titleLines: ['高级运维工程师', '（海外云）'],
     category: 'Open Role · 技术研发',
     dept: 'tech',
     salary: '25 – 35K',
@@ -130,7 +127,6 @@ export const jobs: Job[] = [
   {
     slug: '04_ai_pm',
     title: 'AI 解决方案 / 产品经理（效率效能）',
-    titleLines: ['AI 解决方案 / 产品经理', '（效率效能）'],
     category: 'Open Role · 产品 & AI',
     dept: 'product',
     salary: '15 – 30K',

@@ -33,16 +33,6 @@ export default async function JobDetailPage({
   const job = getJobBySlug(slug);
   if (!job) notFound();
 
-  const titleEl = job.titleLines ? (
-    <>
-      {job.titleLines[0]}
-      <br />
-      {job.titleLines[1]}
-    </>
-  ) : (
-    job.title
-  );
-
   return (
     <div className="detail-page">
       <nav>
@@ -79,7 +69,7 @@ export default async function JobDetailPage({
           <div className="card" id="job-detail-card">
             <div className="card-header">
               <div className="eyebrow">{job.category}</div>
-              <h1>{titleEl}</h1>
+              <h1>{job.title}</h1>
               <div className="badge-row">
                 <span className="badge b-blue">{job.salary}</span>
                 {job.tags.map((tag, idx) => {
