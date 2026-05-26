@@ -176,17 +176,16 @@ hr{border:none;border-top:1px solid var(--border)}
 .cta-title{font-size:clamp(22px,3vw,30px);font-weight:700;color:var(--text);letter-spacing:-.3px;margin-bottom:.75rem}
 .cta-desc{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:2rem}
 .cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:2rem;text-align:left}
+.contact-grid{display:flex;justify-content:center;margin-top:2rem;text-align:left}
+.contact-grid .contact-card-cta{max-width:440px;width:100%}
 .contact-card-cta{background:var(--white);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem;box-shadow:var(--shadow)}
 .contact-card-icon{font-size:22px;margin-bottom:.6rem}
 .contact-card-label{font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--text3);text-transform:uppercase;margin-bottom:8px}
 .contact-card-value{font-family:'SF Mono',Monaco,Menlo,Consolas,monospace;font-size:13.5px;color:var(--text);background:var(--bg);border:1px solid var(--border);padding:10px 12px;border-radius:var(--r);word-break:break-all;margin-bottom:10px;line-height:1.5}
 .contact-card-hint{font-size:12px;color:var(--text2);line-height:1.7}
 .contact-card-hint code{background:var(--bg);border:1px solid var(--border);padding:1px 6px;border-radius:4px;font-family:'SF Mono',Monaco,Menlo,Consolas,monospace;font-size:11.5px;color:var(--text)}
-.contact-tip-bottom{margin:1.5rem auto 0;font-size:13px;color:var(--text2);line-height:1.75;background:var(--blue-light);border:1px solid var(--blue-mid);border-radius:var(--r);padding:14px 18px;text-align:left;max-width:680px}
+.contact-tip-bottom{margin:1.5rem auto 0;font-size:13px;color:var(--text2);line-height:1.75;background:var(--blue-light);border:1px solid var(--blue-mid);border-radius:var(--r);padding:14px 18px;text-align:left;max-width:440px}
 .contact-tip-bottom strong{color:var(--blue-text);font-weight:600}
-@media(max-width:640px){.contact-grid{grid-template-columns:1fr}}
-
 /* FOOTER */
 footer{background:var(--white);border-top:1px solid var(--border);padding:1.75rem 2rem;text-align:center}
 footer p{font-size:13px;color:var(--text3)}
@@ -233,7 +232,7 @@ footer a:hover{color:var(--text)}
     <div class="referral-icon">👋</div>
     <div>
       <div class="referral-title">这是一份个人内推页，并非 CWILL 官方招聘页</div>
-      <div class="referral-desc">我目前在 CWILL 工作，把公司当前在招的岗位整理在这里，方便你了解。所有职位均真实在招，欢迎通过页面底部的邮箱 / 微信联系我，我会帮你把简历直接递到对应部门负责人。最终是否录用以公司正式面试评估为准。</div>
+      <div class="referral-desc">我目前在 CWILL 工作，把公司当前在招的岗位整理在这里，方便你了解。所有职位均真实在招，欢迎通过页面底部的邮箱联系我，我会帮你把简历直接递到对应部门负责人。最终是否录用以公司正式面试评估为准。</div>
     </div>
   </div>
 </div>
@@ -425,7 +424,7 @@ footer a:hover{color:var(--text)}
   <div class="container">
     <div class="sec-eyebrow">Open Roles · 当前在招岗位</div>
     <h2>5 个开放岗位（深圳）</h2>
-    <p class="sec-desc">JD 内容整理自公司公开招聘信息，截至本页最近更新均真实在招。看到合适的岗位，可通过页尾的邮箱 / 微信联系我，由我帮你内推。</p>
+    <p class="sec-desc">JD 内容整理自公司公开招聘信息，截至本页最近更新均真实在招。看到合适的岗位，可通过页尾的邮箱联系我，由我帮你内推。</p>
     <div class="jobs-filter">
       <button class="filter-btn active" onclick="filterJobs('all',this)">全部职位 (5)</button>
       <button class="filter-btn" onclick="filterJobs('product',this)">产品 & AI</button>
@@ -687,21 +686,16 @@ footer a:hover{color:var(--text)}
 <!-- CONTACT / 联系内推人 -->
 <section class="cta-bg" id="contact">
   <div class="container">
-    <div class="cta-inner" style="max-width:760px">
+    <div class="cta-inner">
       <div class="sec-eyebrow" style="text-align:center">Contact · 联系内推人</div>
       <div class="cta-title">看到合适的岗位？这样联系我</div>
-      <p class="cta-desc">下面两种方式任选其一即可。联系方式做了 base64 编码、防止被爬虫抓走，给你和我都减少点骚扰，麻烦自行解码后联系，谢谢理解 🙏</p>
+      <p class="cta-desc">请通过邮件联系。联系方式做了 base64 编码、防止被爬虫抓走，给你和我都减少点骚扰，麻烦自行解码后发送，谢谢理解 🙏</p>
 
       <div class="contact-grid">
         <div class="contact-card-cta">
           <div class="contact-card-icon">📧</div>
           <div class="contact-card-label">邮件投递（Base64）</div>
           <div class="contact-card-value">bGlhbmd6aGltaW5nem1AZ21haWwuY29t</div>
-        </div>
-        <div class="contact-card-cta">
-          <div class="contact-card-icon">💬</div>
-          <div class="contact-card-label">微信联系（Base64）</div>
-          <div class="contact-card-value">Wk0xMTU0OTM5NDEw</div>
         </div>
       </div>
 
