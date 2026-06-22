@@ -41,26 +41,33 @@ CWILL（畅销家）是一家深耕国际电商生态的 B2B SaaS 平台公司�
 
 ---
 
-### 2. 高级运维工程师（海外云） · 25–35K
+### 2. 运维开发（SRE） · 25–35K
 
-> AWS / GCP · Kubernetes · 多云架构 · 6 年以上 · 支撑全球 SaaS 基础设施
+> SRE · AWS / GCP · K8s · 可观测性 · CMDB · GitOps · 6 年以上
 
 **岗位职责**
-- 负责 AWS（主）及 GCP、阿里云日常资源管理、实例维护与成本优化
-- Kubernetes 集群管理 + CI/CD 流水线，保障应用高效稳定交付
-- 参与 OpenSearch / Prometheus / Grafana / ELK / Zabbix 监控与日志平台建设
-- MySQL、PostgreSQL、Redis、MongoDB 数据库，以及 Kafka、RabbitMQ、Nginx 等中间件运维
-- Shell / Python / Go 脚本提升运维效率，对工具二次开发
-- 配合推进 GDPR、SOC2 等合规整改，执行权限最小化与安全审计
+- 负责公司海外云环境的基础设施建设、运维和持续优化，覆盖 AWS、GCP、Kubernetes、容器、网络、存储、权限与安全等方向
+- 负责 Kubernetes 集群、Docker 容器、CI/CD 流水线、日志平台、监控告警平台的日常管理、故障排查、容量规划和稳定性保障
+- 负责从 0 到 1 建设监控观测与告警体系，覆盖基础设施、K8s、应用服务、中间件、日志、链路追踪和业务关键指标
+- 负责 0 到 1 CMDB / 资产管理体系建设，梳理云资源、K8s 资源、应用服务、域名、证书、中间件、负责人、环境、成本归属等信息
+- 负责 CI/CD 发布体系建设与优化，支持后端 GitOps、前端构建发布、镜像管理、版本追踪、发布审批和审计留存
+- 参与 SOC2、GDPR、EO 14117 等合规整改，配合权限治理、日志留存、密钥管理、审计追踪、访问控制和安全加固
+- 推动 SSO、权限分级、RBAC、IAM、密钥管理等安全体系改造
+- 编写自动化脚本和运维工具，提升云资源管理、告警处理、巡检、发布、成本分析和故障排查效率
 
 **任职要求**
-- 大专及以上，计算机相关专业，6 年以上互联网 / SaaS 运维经验
-- 熟悉 AWS 或 GCP 常用服务（EC2、S3、RDS、VPC 等），掌握 Docker 与 K8s 日常管理
-- 熟悉 Prometheus、Grafana、ELK、Zabbix 部署与维护
-- MySQL / Redis 等数据库日常运维与优化，Linux 管理与故障排查熟练
-- Python / Go / Shell 脚本编写能力，Ansible、Terraform、Jenkins、ArgoCD 至少熟悉一项
+- 熟悉 Docker 与 Kubernetes 集群日常管理，具备 Ingress、Service、ConfigMap、Secret、扩缩容、滚动发布等实践经验
+- 熟悉 VPC、EC2、EKS/GKE、IAM、CloudWatch、Load Balancer、S3、DNS、证书、日志与监控等；AWS + GCP 多云经验优先
+- 具备从 0 到 1 建设监控观测告警体系能力，熟悉 Prometheus、Grafana、Alertmanager、CloudWatch、OpenSearch/ELK 等
+- 具备 CMDB / 资产管理体系搭建能力，并支持审计、成本、告警和发布场景
+- 具备 Go、Shell 脚本编写能力，能开发自动化工具、巡检脚本、云资源同步、告警通知和简单平台；Python 优先
+- 熟悉 CI/CD 流水线，了解 GitHub、CodeBuild、CodePipeline、ArgoCD、GitOps、ECR/GCR、发布回滚与审计
+- 熟悉日志系统建设，了解采集、清洗、存储、查询、权限隔离、留存、脱敏和告警联动
+- 了解 SSO、OAuth/OIDC、SAML、RBAC、IAM、MFA 等；企业内部 SSO 改造或权限治理经验优先
+- 具备较强问题排查能力，能独立定位 K8s、网络、容器、云服务、CI/CD、日志监控、中间件等线上问题
+- 有合规整改、安全审计、SOC2、GDPR、国际化 SaaS 产品运维经验优先
 
-**加分项**：AWS + GCP 多云混合部署 · 云原生（ServiceMesh / Helm / ArgoCD） · 合规整改 / 安全审计 · 国际化 SaaS 运维
+**加分项**：AWS + GCP 混合部署 · CMDB 0→1 建设 · SSO / IAM / RBAC 改造 · SOC2 / GDPR / EO 14117 合规 · 日志/监控/告警/CI/CD 平台建设 · Go 运维平台开发
 
 ---
 
