@@ -17,8 +17,8 @@ export default function HomePage() {
             </div>
           </Link>
           <div className="nav-links">
-            <a href="#about">关于公司</a>
-            <a href="#benefits">福利待遇</a>
+            <Link href="/company#about">关于公司</Link>
+            <Link href="/company#benefits">福利待遇</Link>
             <a href="#jobs">开放职位</a>
           </div>
           <a href="#jobs" className="nav-btn">
@@ -59,9 +59,9 @@ export default function HomePage() {
             <a href="#jobs" className="btn-primary">
               浏览岗位
             </a>
-            <a href="#about" className="btn-ghost">
+            <Link href="/company" className="btn-ghost">
               先了解公司
-            </a>
+            </Link>
           </div>
           <div className="hero-stats">
             {COMPANY_STATS.map((s) => (
